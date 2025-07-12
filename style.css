@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: aliceblue;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form {
+  width: 40%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.form .mb-3 {
+  margin-bottom: 10px;
+}
+.form .mb-3 label {
+  font-size: 20px;
+  font-weight: 600;
+}
+.form .mb-3 input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 0.3px solid black;
+  /* outline: none;*/
+}
+.form .mb-3 button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: rgb(0, 255, 55);
+  color: white;
+}
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: none;
+}
+.chat-main {
+  width: 50%;
+  /* border: 1px solid black; */
+  padding: 10px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+.chat-main .chat-screen {
+  height: 70vh;
+  border: 1px solid black;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.chat-main .chat-screen::-webkit-scrollbar {
+  display: none;
+}
+.chat-main h1 {
+  text-align: center;
+}
+.chat-main .chat-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat-main .chat-form input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 0.3px solid black;
+  outline: none;
+}
+.chat-main .chat-form button {
+  padding: 5.5px 12px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  background-color: rgb(30, 103, 30);
+  color: white;
+}
+.chat-screen .chats .other-user {
+  display: flex;
+  gap: 5px;
+  justify-content: start;
+  align-content: end;
+}
+.chat-screen .chats {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.chat-screen .chats .other-user img {
+  width: 5%;
+  object-fit: contain;
+}
+.chat-screen .chats .other-user p {
+  width: 5%;
+  width: 50%;
+  background-color: rgb(32, 94, 58);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.chat-screen .chats .current-user {
+  display: flex;
+  gap: 5px;
+  justify-content: end;
+  align-content: end;
+  flex-direction: row-reverse;
+}
+.chat-screen .chats .current-user img {
+  width: 5%;
+  object-fit: contain;
+}
+.chat-screen .chats .current-user p {
+  width: 5%;
+  width: 50%;
+  background-color: rgb(73, 115, 91);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
